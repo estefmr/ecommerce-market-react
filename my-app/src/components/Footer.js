@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import InputGroup from "react-bootstrap/InputGroup";
 import Form from "react-bootstrap/Form";
+import { BsLinkedin, BsInstagram, BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -40,12 +41,16 @@ const Footer = () => {
           <div className="col-4">
             <h4 className="text-white">Contact us </h4>
             <div className="footer-links d-flex flex-column">
-              <address className="text-white">Hno _ 537 Year Vill Chopal, Tex, Hant <br />
+              <address className="text-white fs-6">Hno _ 537 Year Vill Chopal, Tex, Hant <br />
               PinCode: 1311
               </address>
-              <Link className="text-white p-2 mb-1">Fruits</Link>
-              <Link className="text-white p-2 mb-1">Vegetables</Link>
-              <Link className="text-white p-2 mb-1">Snacks</Link>
+              <a href="tel:+9189876554" className="mt-4 d-block mb-3 text-white">+918526348</a>
+              <a href="mailto:correo@gmail.com" className="mt-4 d-block mb-3 text-white">correo@gmail.com</a>
+              <div className="social_icons d-flex alig-items-center gap-30">
+                <a className="text-white" href="mailto:correo@gmail.com"> <BsLinkedin className="fs-5"/></a>
+                <a className="text-white" href="mailto:correo@gmail.com"> <BsInstagram className="fs-5"/></a>
+                <a className="text-white" href="mailto:correo@gmail.com"> <BsFacebook className="fs-5"/></a>
+              </div>
             </div>
           </div>
           <div className="col-3">
